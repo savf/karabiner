@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<root>
+	<item>
+		<name>CommandTab</name>
+		<identifier>private.commandtab</identifier>
+		<autogen>
+			__KeyOverlaidModifier__
+			KeyCode::COMMAND_L,
+			KeyCode::COMMAND_L,
+			KeyCode::TAB
+		</autogen>
+	</item>
+	<modifierdef>SPACEFN</modifierdef>
+	<item>
+		<name>SpaceFn</name>
+		<identifier>private.spacefn</identifier>
+		<autogen>
+	      __KeyOverlaidModifierWithRepeat__
+	      KeyCode::SPACE,
+	      KeyCode::VK_MODIFIER_SPACEFN,
+	      ModifierFlag::SPACEFN,
+	      KeyCode::SPACE
+	    </autogen>
+	    <block>
+	      <modifier_only>ModifierFlag::SPACEFN</modifier_only>
+	      <autogen>__BlockUntilKeyUp__ KeyCode::SPACE</autogen>
+	    </block>
+	    <!-- HJKL word navigation -->
+	    <autogen>
+	      __KeyToKey__
+	      KeyCode::H, ModifierFlag::SPACEFN | ModifierFlag::COMMAND_L,
+	      KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L
+	    </autogen>
+	    <autogen>
+	      __KeyToKey__
+	      KeyCode::J, ModifierFlag::SPACEFN | ModifierFlag::COMMAND_L,
+	      KeyCode::CURSOR_DOWN, ModifierFlag::OPTION_L
+	    </autogen>
+	    <autogen>
+	      __KeyToKey__
+	      KeyCode::K, ModifierFlag::SPACEFN | ModifierFlag::COMMAND_L,
+	      KeyCode::CURSOR_UP, ModifierFlag::OPTION_L
+	    </autogen>
+	    <autogen>
+	      __KeyToKey__
+	      KeyCode::L, ModifierFlag::SPACEFN | ModifierFlag::COMMAND_L,
+	      KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L
+	    </autogen>
+	    <!-- Umlauts -->
+	    <autogen>
+	    	__KeyToKey__
+	    	KeyCode::A, ModifierFlag::SPACEFN,
+	    	KeyCode::A, ModifierFlag::OPTION_L
+	    </autogen>
+	    <autogen>
+	    	__KeyToKey__
+	    	KeyCode::O, ModifierFlag::SPACEFN,
+	    	KeyCode::O, ModifierFlag::OPTION_L
+	    </autogen>
+	    <autogen>
+	    	__KeyToKey__
+	    	KeyCode::U, ModifierFlag::SPACEFN,
+	    	KeyCode::U, ModifierFlag::OPTION_L
+	    </autogen>
+	    <!-- SpaceFn + Backspace = Delete -->
+	    <autogen>
+	    	__KeyToKey__
+	    	KeyCode::BACKSLASH, ModifierFlag::SPACEFN,
+	    	KeyCode::FORWARD_DELETE
+	    </autogen>
+	</item>
+</root>
