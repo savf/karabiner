@@ -10,9 +10,10 @@ When the space bar is pressed once, it produces a single space (" ") character, 
 Here is a list of possible key combinations:
 
 Key combination        | Executed command
------------------------|-----------------
+-----------------------|------------------------------
 Space + aou            | äöü
-Space + Command + hjkl | Jump words
+Space + Command + hl   | Jump words forward/backward
+Space + Command + jk   | Jump to beginning/end of line
 Space + Backspace      | Delete
 
 ## CommandTab

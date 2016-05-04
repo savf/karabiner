@@ -34,12 +34,12 @@
 	    <autogen>
 	      __KeyToKey__
 	      KeyCode::J, ModifierFlag::SPACEFN | ModifierFlag::COMMAND_L,
-	      KeyCode::CURSOR_DOWN, ModifierFlag::OPTION_L
+	      KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L
 	    </autogen>
 	    <autogen>
 	      __KeyToKey__
 	      KeyCode::K, ModifierFlag::SPACEFN | ModifierFlag::COMMAND_L,
-	      KeyCode::CURSOR_UP, ModifierFlag::OPTION_L
+	      KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L
 	    </autogen>
 	    <autogen>
 	      __KeyToKey__
